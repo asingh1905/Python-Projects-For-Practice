@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import simpledialog,messagebox
-import os,datetime,smtplib,json,requests,pandas as pd
+import os,datetime,smtplib,json,requests,pandas as pd,html
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
@@ -79,7 +79,7 @@ class StartQuiz():
         
     def changeQn(self):
         if self.num < len(self.data):
-            canvas2.itemconfig(question,text=self.data[self.num]["question"],font=("Arial",12))
+            canvas2.itemconfig(question,text=html.unescape(self.data[self.num]["question"]),font=("Arial",12))
         else:
             self.quit()
 
