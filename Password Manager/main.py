@@ -55,11 +55,11 @@ def cancelPlatform():
     
 def defMail():
     userId_input.delete(0,END)
-    userId_input.insert(0,"xyz@mail.com")
+    userId_input.insert(0,"105singhanshuman@gmail.com")
 
 def defPhone():
     userId_input.delete(0,END)
-    userId_input.insert(0,"0123456789")
+    userId_input.insert(0,"8822786312")
 
 def search():
     try:
